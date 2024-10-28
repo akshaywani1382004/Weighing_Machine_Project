@@ -1,11 +1,15 @@
 // python -m http.server 8000 
 // http://localhost:8000/
 
+// multiple
+// python -m http.server 8000 --bind 192.168.118.160
+// http://192.168.118.160:8000
+
 #include <WiFi.h>
 #include <WebServer.h>
 
-const char* ssid = "Akshay";    
-const char* password = "13082004"; 
+const char* ssid = "WaniSir";    
+const char* password = "12345678"; 
 
 WebServer server(80);
 
