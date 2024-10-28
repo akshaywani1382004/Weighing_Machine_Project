@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack elements in a column */
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center;
+  height: 100vh;
+  background-color: #0f1633; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px; /* Add margin to the top of the container */
+}
+
+h1 {
+  font-family:cursive;
+  font-size: 50px; /* Larger font size for heading */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Space below the heading */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow effect to the heading */
+}
+
+button {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #61fbec; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px; /* Increased font size for buttons */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+}
+
+button:hover {
+  background-color: #378499; /* Darker background on hover */
+  color: #000000; /* Light blue text color */
+}
+
+/* Separate style for Fetch Data button */
+#fetchDataBtn {
+  margin-top: 20px;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  background-color: #006d5b; /* Yellow background color */
+  color: #ffffff; /* Black text color */
+}
+
+#fetchDataBtn:hover {
+  background-color: #003c32; /* Darker yellow on hover */
+  color: #ffffff; /* Black text remains the same */
+}
+
+p {
+  font-size: 14px; /* Slightly larger font size for paragraph */
+  margin-top: 10px;
+  color: #b0b0b0; /* Light gray text color for better readability */
+}
+
+.data-block {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 20px; /* Add padding for the data block */
+  background-color: #3b4047; /* Dark background for contrast */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Size based on content */
+  color: #61dafb; /* Text color */
+  min-width: 200px; /* Minimum width for the block */
+  text-align: left; /* Align text to the left */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 36px; /* Smaller font size for smaller screens */
+  }
+
+  button {
+    font-size: 16px; /* Smaller button font size */
+    padding: 8px 16px; /* Smaller button padding */
+  }
+
+  .data-block {
+    width: 90%; /* Full width on smaller screens */
+  }
+}
